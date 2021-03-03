@@ -1,0 +1,50 @@
+$dark-text: hsl(229, 25%, 31%);
+$score-text: hsl(229, 64%, 46%);
+$header-outline: hsl(217, 16%, 45%);
+
+$color-rock: hsl(349, 71%, 52%);
+$color-paper: hsl(230, 89%, 62%);
+$color-scissors: hsl(39, 89%, 49%);
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@import './header';
+@import './mainContainer';
+@import './_button';
+@import './_footer';
+@import './_rulesModal';
+@import './responsive';

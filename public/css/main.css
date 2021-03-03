@@ -1,0 +1,233 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(#1f3756, #141539);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header {
+  padding: 10px;
+  border: 4px solid #606e85;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .score-container {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1;
+}
+
+header .score-container p {
+  color: #2a46c0;
+  font-size: 1.3rem;
+}
+
+header .score-container #score {
+  color: #3b4363;
+  font-size: 4rem;
+}
+
+main {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+main .options {
+  width: 200px;
+  height: 200px;
+  background: url("../images/bg-triangle.svg") no-repeat;
+  background-size: 200px;
+  position: relative;
+}
+
+.option-button {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.option-button img {
+  width: 70px;
+  height: 70px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+#rock {
+  background-color: #dc2e4e;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#paper {
+  background-color: #4865f4;
+  right: -20px;
+  top: -20px;
+}
+
+#scissors {
+  background-color: #ec9e0e;
+  left: -20px;
+  top: -20px;
+}
+
+footer {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer #rules {
+  padding: 10px 30px;
+  width: 140px;
+  border: 2px solid #606e85;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.rules-modal {
+  position: initial;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+}
+
+.rules-modal h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #3b4363;
+}
+
+.rules-modal #close {
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.rules-modal.active {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: visible;
+}
+
+@media (min-width: 1366px) {
+  main .options {
+    width: 300px;
+    height: 300px;
+    background-size: 300px;
+  }
+  .option-button {
+    width: 150px;
+    height: 150px;
+  }
+  .option-button img {
+    width: 100px;
+    height: 100px;
+  }
+  footer {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+/*# sourceMappingURL=main.css.map */

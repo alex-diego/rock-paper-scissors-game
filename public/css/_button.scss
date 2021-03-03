@@ -1,0 +1,42 @@
+.option-button {
+  position: absolute;
+  
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  img {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}
+
+#rock {
+  background-color: $color-rock;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#paper {
+  background-color: $color-paper;
+  right: -20px;
+  top: -20px;
+}
+
+#scissors {
+  background-color: $color-scissors;
+  left: -20px;
+  top: -20px;
+}

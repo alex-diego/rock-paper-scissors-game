@@ -1,0 +1,15 @@
+main {
+  width: 100%;
+  display: grid;
+  place-items: center;
+
+
+  .options {
+    width: 200px;
+    height: 200px;
+    background: url('../images/bg-triangle.svg') no-repeat;
+    background-size: 200px;
+
+    position: relative;
+  }
+}
